@@ -872,21 +872,10 @@ p {
 }
 
 .auth-container {
-  width: min(1050px, 100%);
-
-  display: grid;
-
-  grid-template-columns: 1fr 430px;
-
-  background: rgba(255, 255, 255, 0.96);
-
-  border: 1px solid var(--border);
-
-  border-radius: 20px;
-
-  overflow: hidden;
-
-  box-shadow: var(--shadow-lg);
+  width: min(520px, 100%);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .auth-left {
@@ -936,18 +925,12 @@ p {
 }
 
 .auth-card {
-  width: min(470px, 100%);
-
+  width: 100%;
   padding: 40px;
-
-  margin: auto;
-
+  margin: 0 auto;
   background: #ffffff;
-
   border: 1px solid var(--border);
-
   border-radius: 16px;
-
   box-shadow: var(--shadow);
 }
 
