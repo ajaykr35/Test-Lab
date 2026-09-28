@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test - TestLab</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="quiz-page">
+    <header class="quiz-header">
+      <div class="logo"><span>Test</span>Lab</div>
+
+      <div class="quiz-meta">
+        <span id="categoryTitle">Aptitude</span>
+        <span id="progressText">20 min test</span>
+      </div>
+
+      <div class="quiz-user">
+        <div class="user-profile" id="userProfile">
+          <div class="user-avatar" id="userAvatar">U</div>
+          <span id="userNameNav">User</span>
+        </div>
+
+        <button type="button" id="submitBtn" class="submit-test">
+          Submit Test
+        </button>
+      </div>
+    </header>
+
+    <main class="quiz-main">
+      <div class="quiz-topbar">
+        <div class="progress-area">
+          <div class="progress-text">
+            <span id="questionNumber"> Question 1 of 20 </span>
+
+            <span id="answeredText"> 0 answered </span>
+          </div>
+
+          <div class="progress-track">
+            <div id="questionProgress"></div>
+            <div id="answeredProgress"></div>
+          </div>
+        </div>
+
+        <div class="timer-box">
+          <span>⏱</span>
+          <strong id="timer">60</strong>
+          <small>sec</small>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-category" id="questionCategory">Aptitude</div>
+
+        <h1 id="questionText">Loading question...</h1>
+
+        <div id="optionsContainer" class="options-container"></div>
+
+        <div class="quiz-actions">
+          <button type="button" id="nextBtn" class="primary-btn">Next →</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/quiz.js"></script>
+  </body>
+</html>

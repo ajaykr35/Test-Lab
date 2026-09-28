@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History - TestLab</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo"><span>Test</span>Lab</div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="practice.html">Practice</a>
+        <a href="history.html" class="active">History</a>
+
+        <div class="user-profile" id="userProfile">
+          <div class="user-avatar" id="userAvatar">U</div>
+          <span id="userNameNav">User</span>
+        </div>
+
+        <a href="login.html" id="navLogin">Login</a>
+
+        <button type="button" id="logoutBtn" class="logout-btn">Logout</button>
+      </div>
+    </nav>
+
+    <main class="history-page">
+      <div class="history-container">
+        <div class="page-heading">
+          <span class="section-label">PERFORMANCE</span>
+
+          <h1>Test History</h1>
+
+          <p>
+            Track your previous tests and monitor your preparation progress.
+          </p>
+        </div>
+
+        <section class="history-stats">
+          <div class="stat-card">
+            <span class="stat-label">Tests Taken</span>
+            <strong id="testsCount">0</strong>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-label">Best Score</span>
+            <strong id="bestScore">0/20</strong>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-label">Average Accuracy</span>
+            <strong id="avgAccuracy">0%</strong>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-label">Questions Solved</span>
+            <strong id="questionsSolved">0</strong>
+          </div>
+        </section>
+
+        <section class="history-table-wrap">
+          <div class="table-header">
+            <div>
+              <h2>Previous Attempts</h2>
+
+              <p>Your recent test performance</p>
+            </div>
+          </div>
+
+          <div id="emptyHistory" class="empty-state">
+            <h3>No Tests Yet</h3>
+
+            <p>
+              You have not completed any tests yet. Start practicing to build
+              your history.
+            </p>
+
+            <a href="practice.html" class="primary-btn"> Start Practice </a>
+          </div>
+
+          <div id="historyTableContainer" class="history-table-container">
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Category</th>
+                  <th>Difficulty</th>
+                  <th>Score</th>
+                  <th>Accuracy</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+
+              <tbody id="historyBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/history.js"></script>
+  </body>
+</html>

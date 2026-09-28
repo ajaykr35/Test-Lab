@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructions - TestLab</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo"><span>Test</span>Lab</div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="practice.html" class="active">Practice</a>
+        <a href="history.html">History</a>
+
+        <div class="user-profile" id="userProfile">
+          <div class="user-avatar" id="userAvatar">U</div>
+          <span id="userNameNav">User</span>
+        </div>
+
+        <a href="login.html" id="navLogin">Login</a>
+
+        <button type="button" id="logoutBtn" class="logout-btn">Logout</button>
+      </div>
+    </nav>
+
+    <main class="instructions-page">
+      <div class="instructions-container">
+        <div class="page-heading">
+          <span class="section-label">TEST INSTRUCTIONS</span>
+
+          <h1>Before You Begin</h1>
+
+          <p>
+            Read the test details and instructions carefully before starting
+            your assessment.
+          </p>
+        </div>
+
+        <section class="instructions-card">
+          <div class="test-summary">
+            <div class="summary-item">
+              <span>Category</span>
+              <strong id="instructionCategory">Aptitude</strong>
+            </div>
+
+            <div class="summary-item">
+              <span>Difficulty</span>
+              <strong id="instructionDifficulty">Mixed</strong>
+            </div>
+
+            <div class="summary-item">
+              <span>Questions</span>
+              <strong id="instructionQuestions">20</strong>
+            </div>
+
+            <div class="summary-item">
+              <span>Total Time</span>
+              <strong id="instructionTime">20 min</strong>
+            </div>
+
+            <div class="summary-item">
+              <span>Per Question</span>
+              <strong id="instructionPerQuestion">60 sec</strong>
+            </div>
+          </div>
+
+          <div class="instructions-content">
+            <h2>Test Rules</h2>
+
+            <div class="instruction-list">
+              <div class="instruction-item">
+                <span class="instruction-number">01</span>
+
+                <div>
+                  <h3>One Question at a Time</h3>
+                  <p>
+                    Questions will be displayed one at a time. Select an answer
+                    and click Next to continue.
+                  </p>
+                </div>
+              </div>
+
+              <div class="instruction-item">
+                <span class="instruction-number">02</span>
+
+                <div>
+                  <h3>Question Timer</h3>
+                  <p>
+                    Every question has its own timer based on the total test
+                    time you selected.
+                  </p>
+                </div>
+              </div>
+
+              <div class="instruction-item">
+                <span class="instruction-number">03</span>
+
+                <div>
+                  <h3>Automatic Skip</h3>
+                  <p>
+                    If the timer reaches zero, the current question will
+                    automatically be skipped.
+                  </p>
+                </div>
+              </div>
+
+              <div class="instruction-item">
+                <span class="instruction-number">04</span>
+
+                <div>
+                  <h3>Answer Carefully</h3>
+                  <p>
+                    Once you move to the next question, you cannot return to the
+                    previous question.
+                  </p>
+                </div>
+              </div>
+
+              <div class="instruction-item">
+                <span class="instruction-number">05</span>
+
+                <div>
+                  <h3>Automatic Submission</h3>
+                  <p>
+                    The test will automatically submit when the final question
+                    timer reaches zero.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="instructions-actions">
+            <a href="practice.html" class="secondary-btn"> ← Back </a>
+
+            <button type="button" id="startTestBtn" class="primary-btn">
+              Start Test →
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/instructions.js"></script>
+  </body>
+</html>

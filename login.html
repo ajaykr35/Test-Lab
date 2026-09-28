@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - TestLab</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo"><span>Test</span>Lab</div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="practice.html">Practice</a>
+        <a href="history.html">History</a>
+
+        <a href="login.html" class="active" id="navLogin"> Login </a>
+
+        <div class="user-profile" id="userProfile">
+          <div class="user-avatar" id="userAvatar">U</div>
+          <span id="userNameNav">User</span>
+        </div>
+
+        <button type="button" id="logoutBtn" class="logout-btn">Logout</button>
+      </div>
+    </nav>
+
+    <main class="auth-page">
+      <div class="auth-container">
+        <div class="auth-card">
+          <div class="auth-header">
+            <span class="section-label"> WELCOME BACK </span>
+
+            <h1>Login to TestLab</h1>
+
+            <p>Continue your placement preparation journey.</p>
+          </div>
+
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="email"> Email Address </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password"> Password </label>
+
+              <div class="password-field">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                />
+
+                <button
+                  type="button"
+                  id="togglePassword"
+                  class="password-toggle"
+                >
+                  Show
+                </button>
+              </div>
+            </div>
+
+            <p id="loginMessage" class="form-message"></p>
+
+            <button type="submit" class="primary-btn auth-submit">Login</button>
+          </form>
+
+          <div class="auth-footer">
+            <p>
+              Don't have an account?
+              <a href="signup.html"> Create Account </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
